@@ -1,12 +1,18 @@
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
 
 export default function Index () {
     return  (
      <View>
-        <Text>
-        Eu sou o Milior!!
-        </Text>
+        <Text style={styles.title} >Eu sou o Pior!</Text>
      </View>
-    );
+    )
+
 }
+
+const styles = StyleSheet.create({
+    title: {
+        color: "red",
+        fontSize: 22,
+    }
+})
